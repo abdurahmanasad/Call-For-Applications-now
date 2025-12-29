@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Home Page</title>
 <body>
 <div class="header-container">
     <div class="header">
-        <img src="uwc-logo.png"
+        <img class="logo" src="images/uwc-logo.png"
         alt="uwc logo" class="uwc-logo">
-        
-
         <nav class="nav-bar">
             <a href="index.html" class="nav-btn">Home</a>
             <a href="theme.html" class="nav-btn">Conference Theme</a>
             <a href="about.html" class="nav-btn">About Us</a>
-            <!-- <a href="dates.html" class="nav-btn">Key Dates</a> -->
-            <a href="contacts.html" class="nav-btn">Contacts</a>
+            <a href="contacts.html" class="nav-btn">Contact Us</a>
         </nav>
 
-        <img src="stellies-logo.png"
+        <img class="logo logo2" src="images/stellies-logo.png"
         alt="university of Stellenbosch's logo" class="stellies-logo">
     </div>
 </div>
 
 <section class="hero">
-  <div class="hero-overlay"></div>
-
   <div class="hero-card">
-    <h2>International Conference on AI-Powered Emerging Technology and Data Science </h2>
-    <h2>(AI-ETDS 2026)</h2>
-   </div>
-</section>
+    <div class="hero-card-content">
+      <h2>International Conference on AI-Powered Emerging Technology and Data Science
+      <span>(AI-ETDS 2026)</span> 
+    </h2>
+    <p>Hosted by the Stellenbosch University & University of the Western Cape, Faculty of Education</p>
+    </div>
 
-<section class="hero-bar">
+    <div class="hero-bar">
     <p class="hero-dates">
-        <span class="hero-dates-white">Dates:</span> September 25–26, 2026 |
-        <span class="hero-dates-white">Venue:</span> Stellenbosch (TB), South Africa
+      <span class="hero-dates-white">Dates:</span> September 25–26, 2026  
+      <span class="hero-dates-white">|</span>
+      <span class="hero-dates-white">Venue:</span> Stellenbosch (TB), South Africa
     </p>
+    </div>
 
+   </div>
 </section>
 
 
@@ -55,27 +55,26 @@ Join global experts to explore how AI and smart technologies can address challen
 <div class="stell-pic">
     <div class="stellies-text">
         <h2>Shape the future of education at the nexus of innovation and equity in Cape Town!</h2>
-    </div>
-    
-    <div class="stellies-pic">
-        <img src="stellies-pic.png" alt="Stellenbosch campus" class="stellies-img">
-    </div>
+    </div>  
+  <div class="stellies-carousel">
+  <div class="stellies-track">
+    <img src="images/stellies-pic.png" alt="Stellenbosch campus" class="stellies-img">
+  </div>
+</div>
+
+</div>
+
 
 </div>
 
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-actions">
-      <img src="uwc-logo.png" alt="uwc logo" class="uwc-logo">
-
-      <h2 class="footer-quote">
-        From hope to action through <br>knowledge.
-      </h2>
+      <img class="logo" src="images/uwc-logo.png" alt="uwc logo">
+      <h2 class="footer-quote">From hope to action through <br>knowledge.</h2>
     </div>
 
     <div class="footer-links">
-
-      <div class="footer-links-columns">
         <ul>
           <li><a href="https://www.uwc.ac.za/about/uwc-at-a-glance" target="_blank">Home</a></li>
           <li><a href="https://www.uwc.ac.za/about/uwc-careers" target="_blank">Theme</a></li>
@@ -89,14 +88,13 @@ Join global experts to explore how AI and smart technologies can address challen
           <li><a href="https://www.uwc.ac.za/campus-life/resources/library" target="_blank">Stellies</a></li>
           <li><a href="https://www.uwc.ac.za/news-and-announcements/news" target="_blank">Study</a></li>
         </ul>
-        <div class="footer-stellies-logo">
-            <img src="stellies-logo.png" alt="university of Stellenbosch's logo" class="my-stellies-logo">
-            <h2><em>A sound education strengthens <br>the spirit.</em></h2>
-        </div>
-      </div>
     </div>
-  </div>
 
+            <div class="footer-actions">
+            <img class="logo2" src="images/stellies-logo.png" alt="university of Stellenbosch's logo" class="my-stellies-logo">
+            <h2 class="footer-quote"><em>A sound education strengthens <br>the spirit.</em></h2>
+        </div>
+  </div>
 
 
   <div class="footer-bottom">
@@ -114,5 +112,19 @@ Join global experts to explore how AI and smart technologies can address challen
 
 
 </body>
+<script>
+  const slides = document.querySelectorAll(".stellies-img");
+  let index = 0;
+
+  slides[index].classList.add("active");
+
+  setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }, 30000); 
+</script>
+
+
 
 </head>

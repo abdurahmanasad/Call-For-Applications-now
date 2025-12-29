@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>About Us</title>
 
 <body>
 <div class="header-container">
     <div class="header">
-        <img src="uwc-logo.png"
+        <img class="logo" src="images/uwc-logo.png"
         alt="uwc logo" class="uwc-logo">
         
 
@@ -14,35 +14,28 @@
             <a href="index.html" class="nav-btn">Home</a>
             <a href="theme.html" class="nav-btn">Conference Theme</a>
             <a href="about.html" class="nav-btn">About Us</a>
-            <!-- <a href="dates.html" class="nav-btn">Key Dates</a> -->
-            <a href="contacts.html" class="nav-btn">Contacts</a>
+            <a href="contacts.html" class="nav-btn">Contact Us</a>
         </nav>
 
-        <img src="stellies-logo.png"
+        <img class="logo logo2" src="images/stellies-logo.png"
         alt="university of Stellenbosch's logo" class="stellies-logo">
     </div>
 </div>
 
-<section class="hero hero--theme">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-tab">
-    <div class="hero-tab-inner">
-      <span class="hero-tab-title"><h2>About Us</h2></span>
-
-      <button class="hero-tab-btn" type="button" aria-label="Scroll to conference theme">
-        <svg class="hero-tab-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+<section class="hero">
+  <div class="hero-card hero-card2">
+    <div class="hero-card-content">
+      <h2>About Us</h2>
     </div>
-  </div>
+    <div class="down-arrow">
+        <img src="images/down-arrow.svg" alt="down arrow">
+    </div>
+    </div>
+   </div>
 </section>
 
-<section class="hero-bar--theme"></section>
-<secion class="about-section">
-<main class="content">
+<section class="about-section">
+<main class="about-content">
 <p>
 The Organizing Committee of the International Conference on AI-Powered Emerging Technology and Data Science invites scholars, researchers, educators, and practitioners to submit their papers for presentation at the conference, to be held on September 25-26, in Stellenbosch University  & University of the Western Cape, Faculty of Education. This interdisciplinary conference will bring together academics, researchers, practitioners, and policymakers to explore the evolving role of AI in shaping higher education. The event will focus on fostering dialogue, presenting cutting-edge research, and sharing innovative practices to address the challenges and opportunities of AI integration in education. We invite submissions for papers, presentations, and panels that explore the intersections of AI, education, and society. Submissions should align with one or more of the proposed conference themes.
 </p>
@@ -66,32 +59,35 @@ Through this event, attendees will explore how the integration of AI and data sc
 <p>
 Given the interdisciplinary nature of the conference, it will provide a unique opportunity to bridge the gap between academic research, technological development, and policy formulation. Attendees will be encouraged to consider how emerging technologies can be used to solve some of the most pressing challenges in education, such as improving access to quality education in underserved regions, enhancing learner outcomes, and promoting lifelong learning. Ultimately, this event will serve as a vital space for thought-provoking discussions and the exchange of innovative ideas, offering a forward-looking view on how emerging technologies and data science are revolutionizing higher education. By embracing these advancements, educational institutions can unlock new potentials for teaching and learning, ensuring that they are prepared to meet the evolving needs of students, educators, and the broader society.
 </p>
-
-<div class="about-images">
-    <div class="img-box img-box--stell">
-        <img src="stellies-pic.png" alt="Stellenbosch campus" class="stellies-img">
-    </div>
-
-    <div class="img-box img-box--uwc">
-        <img src="uwc-grad-hall.png" alt="UWC campus" class="uwc-img">
-    </div>
-</div>
 </main>
-</secion>
+
+<div class="carousel">
+  <div class="carousel-track">
+    <div class="carousel-slide">
+      <img src="images/st-img.png" alt="Stellenbosch campus">
+    </div>
+
+    <div class="carousel-slide">
+      <img src="images/uwc-grad-hall.png" alt="UWC campus">
+    </div>
+  </div>
+
+  <div class="carousel-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+</section>
 
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-actions">
-      <img src="uwc-logo.png" alt="uwc logo" class="uwc-logo">
-
-      <h2 class="footer-quote">
-        From hope to action through <br>knowledge.
-      </h2>
+      <img class="logo" src="images/uwc-logo.png" alt="uwc logo">
+      <h2 class="footer-quote">From hope to action through <br>knowledge.</h2>
     </div>
 
     <div class="footer-links">
-
-      <div class="footer-links-columns">
         <ul>
           <li><a href="https://www.uwc.ac.za/about/uwc-at-a-glance" target="_blank">Home</a></li>
           <li><a href="https://www.uwc.ac.za/about/uwc-careers" target="_blank">Theme</a></li>
@@ -105,14 +101,13 @@ Given the interdisciplinary nature of the conference, it will provide a unique o
           <li><a href="https://www.uwc.ac.za/campus-life/resources/library" target="_blank">Stellies</a></li>
           <li><a href="https://www.uwc.ac.za/news-and-announcements/news" target="_blank">Study</a></li>
         </ul>
-        <div class="footer-stellies-logo">
-            <img src="stellies-logo.png" alt="university of Stellenbosch's logo" class="my-stellies-logo">
-            <h2><em>A sound education strengthens <br>the spirit.</em></h2>
-        </div>
-      </div>
     </div>
-  </div>
 
+            <div class="footer-actions">
+            <img class="logo2" src="images/stellies-logo.png" alt="university of Stellenbosch's logo" class="my-stellies-logo">
+            <h2 class="footer-quote"><em>A sound education strengthens <br>the spirit.</em></h2>
+        </div>
+  </div>
 
 
   <div class="footer-bottom">
