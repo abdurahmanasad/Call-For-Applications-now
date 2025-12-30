@@ -41,12 +41,6 @@ a {
   width: 120px !important;
 }
 
-@media (max-width: 900px) {
-  .nav-bar {
-    gap: 18px;
-  }
-}
-
 .nav-btn {
   position: relative;
   color: #f0f0f0;
@@ -189,22 +183,6 @@ a {
   border-radius: 18px;
 }
 
-@media (max-width: 900px) {
-
-  .about-section .content,
-  .about-section .stell-pic {
-    padding: 0 24px;
-  }
-
-  .about-section .stell-pic {
-    grid-template-columns: 1fr;
-  }
-
-  .about-section .stellies-img,
-  .about-section .uwc-img {
-    height: auto;
-  }
-}
 
 .about-section .content {
   max-width: 1332px;
@@ -290,22 +268,6 @@ a {
 .contact-content h3 {
   font-size: 1.4rem;
 }
-
-
-@media (max-width: 900px) {
-  .about-section .content {
-    padding: 0 24px;
-  }
-
-  .about-section .about-images {
-    grid-template-columns: 1fr;
-  }
-
-  .about-section .img-box img {
-    height: auto;
-  }
-}
-
 
 .hero-hosters {
   font-size: 27px;
@@ -431,7 +393,6 @@ p {
   max-width: 1332px;
   margin: 0 auto 60px;
   padding: 0 90px;
-  box-sizing: border-box;
   gap: 2.5rem;
 }
 
@@ -753,7 +714,7 @@ p {
   padding: 0;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .hero {
     height: 520px;
     background-position: center 30%;
@@ -771,5 +732,187 @@ p {
   .hero {
     height: 320px;
     background-position: center 40%;
+  }
+} */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+}
+
+.mobile-nav-bar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .header-container {
+    position: relative;
+  }
+
+  .mobile-nav-bar.active {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    width: 76vw;
+    position: absolute;
+    top: 6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3A477C;
+    padding: 1.5rem;
+    z-index: 1;
+    align-items: center;
+    color: #363636;
+    border-radius: 0.2rem;
+  }
+
+
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1.6rem;
+    justify-content: space-between;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .nav-bar,
+  .logo2 {
+    display: none;
+  }
+
+  .hero-card-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-card-content p {
+    font-size: 1rem;
+  }
+
+  .hero-dates {
+    font-size: 1rem;
+  }
+
+  .stell-pic {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .stellies-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    position: relative;
+    height: 45vh;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 1.6rem;
+    flex-wrap: nowrap;
+  }
+
+  .footer-links {
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .footer-links a {
+    margin-left: 0rem;
+  }
+
+  .footer-logo {
+    width: 280px !important;
+  }
+
+  .footer-quote {
+    margin-top: 0.7rem;
+  }
+
+  .my-stellies-logo {
+    display: block;
+  }
+
+
+  .footer-bottom-inner {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 19px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: #000;
+  }
+
+  .content,
+  .stell-pic,
+  .about-section {
+    width: 85vw;
+  }
+
+  .stell-pic {
+    margin: 3rem auto;
+  }
+
+  .stellies-text h2 {
+    width: 85vw !important;
+    margin-top: -3rem;
+  }
+
+  .stellies-carousel {
+    min-width: 85vw;
+  }
+
+  .udubs-pic {
+    flex-direction: column-reverse;
+    padding: 0 30px;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+  }
+
+  .uwc-pic {
+    width: 85vw;
+  }
+
+  .carousel-slide-st-img {
+    display: none;
+  }
+
+  .carousel {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .carousel-slide {
+    width: 85vw;
+  }
+
+  .contact-content {
+    margin: 8rem auto;
+    margin-bottom: 2rem;
+    width: 85vw;
+  }
+
+  .contact-wrapper ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .contact-wrapper img {
+    display: none;
   }
 }
