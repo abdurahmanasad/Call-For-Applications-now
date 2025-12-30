@@ -1,146 +1,183 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conference Theme Overview</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <body>
-<div class="header-container">
+
+<!-- ================= HEADER ================= -->
+<header class="header-container">
     <div class="header">
-        <img src="uwc-logo.png"
-        alt="uwc logo" class="uwc-logo">
-        
+        <img src="images/uwc-logo.png" alt="uwc logo" class="logo">
 
         <nav class="nav-bar">
             <a href="index.html" class="nav-btn">Home</a>
             <a href="theme.html" class="nav-btn">Conference Theme</a>
             <a href="about.html" class="nav-btn">About Us</a>
-            <!-- <a href="dates.html" class="nav-btn">Key Dates</a> -->
-            <a href="contacts.html" class="nav-btn">Contacts</a>
+            <a href="contacts.html" class="nav-btn">Contact Us</a>
         </nav>
 
-        <img src="stellies-logo.png"
-        alt="university of Stellenbosch's logo" class="stellies-logo">
+        <img src="images/stellies-logo.png"
+             alt="university of Stellenbosch's logo"
+             class="logo2">
+        <img class="hamburger-icon" src="images/ham1.svg" alt="hamburger menu icon">
     </div>
-</div>
+     <nav class="mobile-nav-bar">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="theme.html" class="nav-btn">Conference Theme</a>
+            <a href="about.html" class="nav-btn">About Us</a>
+            <a href="contacts.html" class="nav-btn">Contact Us</a>
+        </nav>
+</header>
 
-<section class="hero hero--theme">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-tab">
-    <div class="hero-tab-inner">
-      <span class="hero-tab-title"><h2>Conference Theme</h2></span>
-
-      <button class="hero-tab-btn" type="button" aria-label="Scroll to conference theme">
-        <svg class="hero-tab-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-card hero-card2">
+        <div class="hero-card-content">
+            <h2>Conference Theme</h2>
+        </div>
+        <div class="down-arrow">
+            <img src="images/down-arrow.svg" alt="down arrow">
+        </div>
     </div>
-  </div>
 </section>
 
-<section class="hero-bar hero-bar--theme"></section>
-
+<!-- ================= MAIN CONTENT ================= -->
 <main class="content">
-<div class="theme-text">
+    <div class="theme-text">
+        <p>
+            The conference will explore the transformative impact of Artificial Intelligence (AI), Emerging Technologies, and Data Science on Higher Education and Beyond, focusing on their implications for teaching, learning, research, and administration. The goal is to foster interdisciplinary dialogue on the opportunities, challenges, and ethical considerations associated with AI-driven innovations and data-driven decision-making in academia and industry.
+        </p>
 
-<p>
-The conference will explore the transformative impact of Artificial Intelligence (AI), Emerging Technologies, and Data Science on Higher Education and Beyond, focusing on their implications for teaching, learning, research, and administration. The goal is to foster interdisciplinary dialogue on the opportunities, challenges, and ethical considerations associated with AI-driven innovations and data-driven decision-making in academia and industry.
-</p>
+        <h3>We welcome submissions on topics including, but not limited to:</h3>
+        <ol class="submission-topics-lists">
+            <li>
+                <h4>AI-driven personalized learning and adaptive education</h4>
+                AI-driven personalized learning leverages data analytics and machine learning to tailor educational experiences based on individual student needs, enhancing engagement, optimizing learning pathways, and providing real-time feedback. Adaptive education systems can identify students' strengths and weaknesses, helping instructors provide targeted interventions that improve learning outcomes. However, implementation comes with challenges, including data privacy concerns and biases in AI algorithms. Institutions must navigate these complexities to ensure that AI-driven learning remains ethical, equitable, and aligned with educational objectives. Research on best practices, ethical considerations, and long-term impacts is essential for optimizing AI's role in personalized education.
+            </li>
 
+            <li>
+                <h4>AI applications in curriculum development and assessment</h4>
+                AI is transforming curriculum development by automating content creation, aligning coursework with industry demands, and enhancing assessment methodologies. Machine learning algorithms analyse educational trends and student performance data to recommend curriculum modifications that improve learning effectiveness. AI-powered assessment tools offer precise evaluations of student competencies through automated grading, plagiarism detection, and sentiment analysis. Despite its benefits, AI-driven curriculum design poses concern about over-reliance on technology and the loss of human intuition in educational decision-making. Ensuring that AI complements rather than replaces traditional pedagogical expertise is crucial. Studies examining AI's role in curriculum development should address its reliability, fairness, and potential biases in assessment models.
+            </li>
 
-<h3>We welcome submissions on topics including, but not limited to:</h3>
-<ol>
-	<li><h4>AI-driven personalized learning and adaptive education</h4>
-AI-driven personalized learning leverages data analytics and machine learning to tailor educational experiences based on individual student needs, enhancing engagement, optimizing learning pathways, and providing real-time feedback. Adaptive education systems can identify students' strengths and weaknesses, helping instructors provide targeted interventions that improve learning outcomes. However, implementation comes with challenges, including data privacy concerns and biases in AI algorithms. Institutions must navigate these complexities to ensure that AI-driven learning remains ethical, equitable, and aligned with educational objectives. Research on best practices, ethical considerations, and long-term impacts is essential for optimizing AI's role in personalized education.</li>
+            <li>
+                <h4>Ethical and legal implications of AI in higher education</h4>
+                The growing reliance on AI in higher education raises critical ethical and legal questions, such as student data privacy, algorithmic bias, and accountability in decision-making. Universities must develop policies ensuring compliance with data protection regulations while fostering transparency in AI deployment. Furthermore, AI-driven decision-making in admissions, grading, and faculty evaluation can introduce ethical dilemmas related to fairness and discrimination. Research exploring legal frameworks governing AI in education, along with guidelines for responsible AI use, will be instrumental in shaping ethical AI practices in academia.
+            </li>
 
+            <li>
+                <h4>AI-enhanced student engagement and retention strategies</h4>
+                AI tools improve student engagement by personalizing learning experiences, predicting at-risk students, and providing real-time academic support. Chatbots, virtual tutors, and AI-driven analytics foster a more interactive and supportive learning environment, helping institutions improve retention rates by identifying early warning signs and implementing timely interventions. However, integrating AI into student support systems requires careful consideration of accessibility, data security, and user experience. Research is needed to evaluate AI's effectiveness in enhancing student engagement and to develop best practices for ensuring inclusivity and equity in AI-driven educational initiatives.
+            </li>
 
-	<li><h4>AI applications in curriculum development and assessment</h4>
-AI is transforming curriculum development by automating content creation, aligning coursework with industry demands, and enhancing assessment methodologies. Machine learning algorithms analyse educational trends and student performance data to recommend curriculum modifications that improve learning effectiveness. AI-powered assessment tools offer precise evaluations of student competencies through automated grading, plagiarism detection, and sentiment analysis. Despite its benefits, AI-driven curriculum design poses concern about over-reliance on technology and the loss of human intuition in educational decision-making. Ensuring that AI complements rather than replaces traditional pedagogical expertise is crucial. Studies examining AI's role in curriculum development should address its reliability, fairness, and potential biases in assessment models.</li>
-	<li><h4>Ethical and legal implications of AI in higher education</h4>
-The growing reliance on AI in higher education raises critical ethical and legal questions, such as student data privacy, algorithmic bias, and accountability in decision-making. Universities must develop policies ensuring compliance with data protection regulations while fostering transparency in AI deployment. Furthermore, AI-driven decision-making in admissions, grading, and faculty evaluation can introduce ethical dilemmas related to fairness and discrimination. Research exploring legal frameworks governing AI in education, along with guidelines for responsible AI use, will be instrumental in shaping ethical AI practices in academia.</li>
-	<li><h4>AI-enhanced student engagement and retention strategies</h4>
-AI tools improve student engagement by personalizing learning experiences, predicting at-risk students, and providing real-time academic support. Chatbots, virtual tutors, and AI-driven analytics foster a more interactive and supportive learning environment, helping institutions improve retention rates by identifying early warning signs and implementing timely interventions. However, integrating AI into student support systems requires careful consideration of accessibility, data security, and user experience. Research is needed to evaluate AI's effectiveness in enhancing student engagement and to develop best practices for ensuring inclusivity and equity in AI-driven educational initiatives.</li>
-	<li><h4>The role of AI in academic research and knowledge production</h4>
-AI is revolutionizing academic research by automating data analysis, literature reviews, and hypothesis testing. Machine learning algorithms facilitate pattern recognition in large datasets, accelerating discoveries in various disciplines. AI-powered research assistants help scholars identify relevant studies, generate citations, and streamline the publication process. Despite its advantages, increasing reliance on AI in research raises concerns about the authenticity and integrity of scholarly work. Ethical considerations regarding AI-generated content, authorship attribution, and the replication crisis must be addressed. Research on AI's role in knowledge production should explore both its transformative potential and its implications for academic integrity.</li>
-	<li><h4>AI and academic integrity: challenges and solutions</h4>
-AI introduces new challenges to academic integrity, such as AI-generated plagiarism and automated content manipulation. Advanced AI tools can create essays, research papers, and even code, making it difficult to distinguish between human- and AI-generated work. Institutions must develop strategies to detect and mitigate academic dishonesty facilitated by AI. Conversely, AI can also support academic integrity through plagiarism detection, automated proctoring, and forensic linguistic analysis. Investigating the dual role of AI in both undermining and safeguarding academic integrity will be crucial in shaping institutional policies and technological safeguards.</li>
-	<li><h4>AI-powered administrative and decision-making tools</h4>
-AI streamlines higher education administration by automating student admissions, financial aid processing, and faculty recruitment. Intelligent decision-making systems enhance operational efficiency, reduce human error, and optimize resource allocation. AI-driven analytics support institutional planning by identifying trends and forecasting enrolment patterns. However, reliance on AI in administrative processes raises concerns about transparency, accountability, and bias in decision-making. Research is needed to examine the ethical implications of AI-powered administrative tools and develop frameworks for their responsible use.</li>
-	<li><h4>The impact of AI on faculty roles and pedagogical methods</h4>
-AI is reshaping faculty roles by automating grading, content delivery, and administrative tasks. AI-powered tools assist educators in designing interactive course materials, facilitating remote learning, and providing data-driven insights into student performance. While AI enhances efficiency, it also raises questions about the future of traditional teaching roles and the potential deskilling of educators. Studies on AI’s impact on pedagogy should explore how faculty can effectively integrate AI while preserving human-cantered teaching approaches.
-</ol>
+            <li>
+                <h4>The role of AI in academic research and knowledge production</h4>
+                AI is revolutionizing academic research by automating data analysis, literature reviews, and hypothesis testing. Machine learning algorithms facilitate pattern recognition in large datasets, accelerating discoveries in various disciplines. AI-powered research assistants help scholars identify relevant studies, generate citations, and streamline the publication process. Despite its advantages, increasing reliance on AI in research raises concerns about the authenticity and integrity of scholarly work. Ethical considerations regarding AI-generated content, authorship attribution, and the replication crisis must be addressed. Research on AI's role in knowledge production should explore both its transformative potential and its implications for academic integrity.
+            </li>
 
-</div>
+            <li>
+                <h4>AI and academic integrity: challenges and solutions</h4>
+                AI introduces new challenges to academic integrity, such as AI-generated plagiarism and automated content manipulation. Advanced AI tools can create essays, research papers, and even code, making it difficult to distinguish between human- and AI-generated work. Institutions must develop strategies to detect and mitigate academic dishonesty facilitated by AI. Conversely, AI can also support academic integrity through plagiarism detection, automated proctoring, and forensic linguistic analysis. Investigating the dual role of AI in both undermining and safeguarding academic integrity will be crucial in shaping institutional policies and technological safeguards.
+            </li>
+
+            <li>
+                <h4>AI-powered administrative and decision-making tools</h4>
+                AI streamlines higher education administration by automating student admissions, financial aid processing, and faculty recruitment. Intelligent decision-making systems enhance operational efficiency, reduce human error, and optimize resource allocation. AI-driven analytics support institutional planning by identifying trends and forecasting enrolment patterns. However, reliance on AI in administrative processes raises concerns about transparency, accountability, and bias in decision-making. Research is needed to examine the ethical implications of AI-powered administrative tools and develop frameworks for their responsible use.
+            </li>
+
+            <li>
+                <h4>The impact of AI on faculty roles and pedagogical methods</h4>
+                AI is reshaping faculty roles by automating grading, content delivery, and administrative tasks. AI-powered tools assist educators in designing interactive course materials, facilitating remote learning, and providing data-driven insights into student performance. While AI enhances efficiency, it also raises questions about the future of traditional teaching roles and the potential deskilling of educators. Studies on AI’s impact on pedagogy should explore how faculty can effectively integrate AI while preserving human-centered teaching approaches.
+            </li>
+        </ol>
+    </div>
 </main>
-<div class="udubs-pic">
+
+<!-- ================= SUBMISSION DEADLINES ================= -->
+<section class="udubs-pic">
     <div class="udubs-text">
         <p>
             Authors are invited to submit original research papers, case studies, or conceptual papers that contribute to the discourse on AI in higher education.
         </p>
         <ul>
-            <li>Abstract Submission Deadline: 5th May 2026</li>
-            <li>Full Paper Submission Deadline: 4th July 2026</li>
-            <li>Notification of Acceptance: 5th August 2026</li>
-            <li>Final Paper Submission & Registration Deadline: 5th September 2026</li>
+            <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Abstract Submission Deadline: <span class="rg-dates">5th May 2026</span></li>
+            <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Full Paper Submission Deadline: <span class="rg-dates">4th July 2026</span></li>
+            <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Notification of Acceptance: <span class="rg-dates">5th August 2026</span></li>
+            <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Final Paper Submission & Registration Deadline: <span class="rg-dates">5th September 2026</span></li>
         </ul>
-        <p>
+        <p class="all-rights">
             All submissions must adhere to the conference formatting guidelines and should be submitted via this email <a href="mailto:iharun@uwc.ac.za">Submission Email</a>
         </p>
     </div>
     <div class="uwc-pic">
-        <img src="uwc-grad-hall.png" alt="UWC campus" class="uwc-img">
+        <img src="images/dates-img.png" alt="UWC campus" class="uwc-img">
     </div>
+</section>
 
-</div>
-
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
-  <div class="footer-top">
-    <div class="footer-actions">
-      <img src="uwc-logo.png" alt="uwc logo" class="uwc-logo">
-
-      <h2 class="footer-quote">
-        From hope to action through <br>knowledge.
-      </h2>
-    </div>
-
-    <div class="footer-links">
-
-      <div class="footer-links-columns">
-        <ul>
-          <li><a href="https://www.uwc.ac.za/about/uwc-at-a-glance" target="_blank">Home</a></li>
-          <li><a href="https://www.uwc.ac.za/about/uwc-careers" target="_blank">Theme</a></li>
-          <li><a href="https://www.uwc.ac.za/about/international-relations" target="_blank">About Us</a></li>
-          <li><a href="https://www.uwc.ac.za/about/leadership/chancellor" target="_blank">Contact Us</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="https://www.uwc.ac.za/campus-life/student-life-and-culture" target="_blank">Apply</a></li>
-          <li><a href="https://www.uwc.ac.za/about/alumni" target="_blank">UWC</a></li>
-          <li><a href="https://www.uwc.ac.za/campus-life/resources/library" target="_blank">Stellies</a></li>
-          <li><a href="https://www.uwc.ac.za/news-and-announcements/news" target="_blank">Study</a></li>
-        </ul>
-        <div class="footer-stellies-logo">
-            <img src="stellies-logo.png" alt="university of Stellenbosch's logo" class="my-stellies-logo">
-            <h2><em>A sound education strengthens <br>the spirit.</em></h2>
+    <div class="footer-top">
+        <div class="footer-actions">
+            <img src="images/uwc-logo.png" alt="uwc logo" class="logo footer-logo">
+            <h2 class="footer-quote">
+                From hope to action through <br>knowledge.
+            </h2>
         </div>
-      </div>
+
+        <div class="footer-links">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+                <li><a href="theme.html">Theme</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="https://www.uwc.ac.za/campus-life/student-life-and-culture" target="_blank">Apply</a></li>
+                <li><a href="https://www.uwc.ac.za/about/alumni" target="_blank">UWC</a></li>
+                <li><a href="https://www.uwc.ac.za/campus-life/resources/library" target="_blank">Stellies</a></li>
+                <li><a href="https://www.uwc.ac.za/news-and-announcements/news" target="_blank">Study</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-actions">
+            <img src="images/stellies-logo.png"
+                 alt="university of Stellenbosch's logo"
+                 class="logo2 my-stellies-logo">
+            <h2 class="footer-quote">
+                <em>A sound education strengthens <br>the spirit.</em>
+            </h2>
+        </div>
     </div>
-  </div>
 
-
-
-  <div class="footer-bottom">
-    <div class="footer-bottom-inner">
-    <span>© 2026 – UWC &amp; Stellenbosch</span>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Terms and Conditions</a>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Cookie Policy</a>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/privacy-policy">       Privacy Notice</a>
+    <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+            <span>© 2026 – UWC &amp; Stellenbosch  <span class="divider">|</span></span>
+           
+            <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Terms and Conditions <span class="divider">|</span></a>
+            
+            <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Cookie Policy <span class="divider">|</span></a>
+            
+            <a href="https://www.uwc.ac.za/privacy-policy">Privacy Notice</a>
+        </div>
     </div>
-</div>
 </footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger-icon');
+const mobileNav = document.querySelector('.mobile-nav-bar');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.toggle('active'); // toggle the 'active' class
+});
+</script>
+
+
 </body>
-</head>
+</html>

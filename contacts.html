@@ -1,104 +1,137 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>Contacts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+</head>
+
 <body>
-<div class="header-container">
+
+<!-- ================= HEADER ================= -->
+<header class="header-container">
     <div class="header">
-        <img src="uwc-logo.png"
-        alt="uwc logo" class="uwc-logo">
-        
+        <img src="images/uwc-logo.png" alt="uwc logo" class="logo">
 
         <nav class="nav-bar">
             <a href="index.html" class="nav-btn">Home</a>
             <a href="theme.html" class="nav-btn">Conference Theme</a>
             <a href="about.html" class="nav-btn">About Us</a>
-            <!-- <a href="dates.html" class="nav-btn">Key Dates</a> -->
-            <a href="contacts.html" class="nav-btn">Contacts</a>
+            <a href="contacts.html" class="nav-btn">Contact Us</a>
         </nav>
 
-        <img src="stellies-logo.png"
-        alt="university of Stellenbosch's logo" class="stellies-logo">
+        <img src="images/stellies-logo.png"
+             alt="university of Stellenbosch's logo"
+             class="logo2">
+        <img class="hamburger-icon" src="images/ham1.svg" alt="hamburger menu icon">
     </div>
-</div>
+     <nav class="mobile-nav-bar">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="theme.html" class="nav-btn">Conference Theme</a>
+            <a href="about.html" class="nav-btn">About Us</a>
+            <a href="contacts.html" class="nav-btn">Contact Us</a>
+        </nav>
+</header>
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-card hero-card2">
+    <div class="hero-card-content">
+      <h2>Contact Us</h2>
+    </div>
 
-<section class="hero hero--theme">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-tab">
-    <div class="hero-tab-inner">
-      <span class="hero-tab-title"><h2>Contacts</h2></span>
-
-      <button class="hero-tab-btn" type="button" aria-label="Scroll to conference theme">
-        <svg class="hero-tab-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+    <div class="down-arrow">
+      <img src="images/down-arrow.svg" alt="Scroll down">
     </div>
   </div>
 </section>
 
-<section class="hero-bar hero-bar--theme"></section>
+<!-- CONTACT CONTENT -->
+<main class="contact-content">
+  <h3>For inquiries, please contact:</h3>
 
-<ul>
-    <li>
-        Prof. Anass Bayaga – <a href="mailto:abayaga@uwc.ac.za"> abayaga@uwc.ac.za </a>
-    </li>
-	<li>
-        Dr. Ibrahim Harun – <a href="mailto:iharun@uwc.ac.za">iharun@uwc.ac.za</a>
-    </li>
+  <div class="contact-wrapper">
+    <ul>
+      <li>
+        Prof. Anass Bayaga –
+        <a href="mailto:abayaga@uwc.ac.za">abayaga@uwc.ac.za</a>
+      </li>
+      <li>
+        Dr. Ibrahim Harun –
+        <a href="mailto:iharun@uwc.ac.za">iharun@uwc.ac.za</a>
+      </li>
+    </ul>
 
-</ul>
-
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-actions">
-      <img src="uwc-logo.png" alt="uwc logo" class="uwc-logo">
-
-      <h2 class="footer-quote">
-        From hope to action through <br>knowledge.
-      </h2>
-    </div>
-
-    <div class="footer-links">
-
-      <div class="footer-links-columns">
-        <ul>
-          <li><a href="https://www.uwc.ac.za/about/uwc-at-a-glance" target="_blank">Home</a></li>
-          <li><a href="https://www.uwc.ac.za/about/uwc-careers" target="_blank">Theme</a></li>
-          <li><a href="https://www.uwc.ac.za/about/international-relations" target="_blank">About Us</a></li>
-          <li><a href="https://www.uwc.ac.za/about/leadership/chancellor" target="_blank">Contact Us</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="https://www.uwc.ac.za/campus-life/student-life-and-culture" target="_blank">Apply</a></li>
-          <li><a href="https://www.uwc.ac.za/about/alumni" target="_blank">UWC</a></li>
-          <li><a href="https://www.uwc.ac.za/campus-life/resources/library" target="_blank">Stellies</a></li>
-          <li><a href="https://www.uwc.ac.za/news-and-announcements/news" target="_blank">Study</a></li>
-        </ul>
-        <div class="footer-stellies-logo">
-            <img src="stellies-logo.png" alt="university of Stellenbosch's logo" class="my-stellies-logo">
-            <h2><em>A sound education strengthens <br>the spirit.</em></h2>
-        </div>
-      </div>
-    </div>
+    <img src="images/email.svg" alt="Email icon">
   </div>
+</main>
 
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-actions">
+            <img src="images/uwc-logo.png" alt="uwc logo" class="logo footer-logo">
+            <h2 class="footer-quote">
+                From hope to action through <br>knowledge.
+            </h2>
+        </div>
 
+        <div class="footer-links">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+                <li><a href="theme.html">Theme</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+            </ul>
 
-  <div class="footer-bottom">
-    <div class="footer-bottom-inner">
-    <span>© 2026 – UWC &amp; Stellenbosch</span>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Terms and Conditions</a>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Cookie Policy</a>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/privacy-policy">       Privacy Notice</a>
+            <ul>
+                <li><a href="https://www.uwc.ac.za/campus-life/student-life-and-culture" target="_blank">Apply</a></li>
+                <li><a href="https://www.uwc.ac.za/about/alumni" target="_blank">UWC</a></li>
+                <li><a href="https://www.uwc.ac.za/campus-life/resources/library" target="_blank">Stellies</a></li>
+                <li><a href="https://www.uwc.ac.za/news-and-announcements/news" target="_blank">Study</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-actions">
+            <img src="images/stellies-logo.png"
+                 alt="university of Stellenbosch's logo"
+                 class="logo2 my-stellies-logo">
+            <h2 class="footer-quote">
+                <em>A sound education strengthens <br>the spirit.</em>
+            </h2>
+        </div>
     </div>
-</div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+            <span>© 2026 – UWC &amp; Stellenbosch  <span class="divider">|</span></span>
+           
+            <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Terms and Conditions <span class="divider">|</span></a>
+            
+            <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Cookie Policy <span class="divider">|</span></a>
+            
+            <a href="https://www.uwc.ac.za/privacy-policy">Privacy Notice</a>
+        </div>
+    </div>
 </footer>
 
+<script>
+const hamburger = document.querySelector('.hamburger-icon');
+const mobileNav = document.querySelector('.mobile-nav-bar');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.toggle('active'); // toggle the 'active' class
+});
+</script>
+
 </body>
-</head>
+</html>

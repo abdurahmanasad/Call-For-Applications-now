@@ -1,48 +1,51 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>About Us</title>
-
+</head>
 <body>
-<div class="header-container">
+<!-- ================= HEADER ================= -->
+<header class="header-container">
     <div class="header">
-        <img src="uwc-logo.png"
-        alt="uwc logo" class="uwc-logo">
-        
+        <img src="images/uwc-logo.png" alt="uwc logo" class="logo">
 
         <nav class="nav-bar">
             <a href="index.html" class="nav-btn">Home</a>
             <a href="theme.html" class="nav-btn">Conference Theme</a>
             <a href="about.html" class="nav-btn">About Us</a>
-            <!-- <a href="dates.html" class="nav-btn">Key Dates</a> -->
-            <a href="contacts.html" class="nav-btn">Contacts</a>
+            <a href="contacts.html" class="nav-btn">Contact Us</a>
         </nav>
 
-        <img src="stellies-logo.png"
-        alt="university of Stellenbosch's logo" class="stellies-logo">
+        <img src="images/stellies-logo.png"
+             alt="university of Stellenbosch's logo"
+             class="logo2">
+        <img class="hamburger-icon" src="images/ham1.svg" alt="hamburger menu icon">
     </div>
-</div>
+     <nav class="mobile-nav-bar">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="theme.html" class="nav-btn">Conference Theme</a>
+            <a href="about.html" class="nav-btn">About Us</a>
+            <a href="contacts.html" class="nav-btn">Contact Us</a>
+        </nav>
+</header>
 
-<section class="hero hero--theme">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-tab">
-    <div class="hero-tab-inner">
-      <span class="hero-tab-title"><h2>About Us</h2></span>
-
-      <button class="hero-tab-btn" type="button" aria-label="Scroll to conference theme">
-        <svg class="hero-tab-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+<section class="hero">
+  <div class="hero-card hero-card2">
+    <div class="hero-card-content">
+      <h2>About Us</h2>
     </div>
-  </div>
+    <div class="down-arrow">
+        <img src="images/down-arrow.svg" alt="down arrow">
+    </div>
+    </div>
+   </div>
 </section>
 
-<section class="hero-bar--theme"></section>
-<secion class="about-section">
-<main class="content">
+<section class="about-section">
+<main class="about-content">
 <p>
 The Organizing Committee of the International Conference on AI-Powered Emerging Technology and Data Science invites scholars, researchers, educators, and practitioners to submit their papers for presentation at the conference, to be held on September 25-26, in Stellenbosch University  & University of the Western Cape, Faculty of Education. This interdisciplinary conference will bring together academics, researchers, practitioners, and policymakers to explore the evolving role of AI in shaping higher education. The event will focus on fostering dialogue, presenting cutting-edge research, and sharing innovative practices to address the challenges and opportunities of AI integration in education. We invite submissions for papers, presentations, and panels that explore the intersections of AI, education, and society. Submissions should align with one or more of the proposed conference themes.
 </p>
@@ -66,66 +69,83 @@ Through this event, attendees will explore how the integration of AI and data sc
 <p>
 Given the interdisciplinary nature of the conference, it will provide a unique opportunity to bridge the gap between academic research, technological development, and policy formulation. Attendees will be encouraged to consider how emerging technologies can be used to solve some of the most pressing challenges in education, such as improving access to quality education in underserved regions, enhancing learner outcomes, and promoting lifelong learning. Ultimately, this event will serve as a vital space for thought-provoking discussions and the exchange of innovative ideas, offering a forward-looking view on how emerging technologies and data science are revolutionizing higher education. By embracing these advancements, educational institutions can unlock new potentials for teaching and learning, ensuring that they are prepared to meet the evolving needs of students, educators, and the broader society.
 </p>
-
-<div class="about-images">
-    <div class="img-box img-box--stell">
-        <img src="stellies-pic.png" alt="Stellenbosch campus" class="stellies-img">
-    </div>
-
-    <div class="img-box img-box--uwc">
-        <img src="uwc-grad-hall.png" alt="UWC campus" class="uwc-img">
-    </div>
-</div>
 </main>
-</secion>
 
-<footer class="footer">
-  <div class="footer-top">
-    <div class="footer-actions">
-      <img src="uwc-logo.png" alt="uwc logo" class="uwc-logo">
-
-      <h2 class="footer-quote">
-        From hope to action through <br>knowledge.
-      </h2>
+<div class="carousel">
+  <div class="carousel-track">
+    <div class="carousel-slide carousel-slide-st-img">
+      <img src="images/st-img.png" alt="Stellenbosch campus">
     </div>
 
-    <div class="footer-links">
-
-      <div class="footer-links-columns">
-        <ul>
-          <li><a href="https://www.uwc.ac.za/about/uwc-at-a-glance" target="_blank">Home</a></li>
-          <li><a href="https://www.uwc.ac.za/about/uwc-careers" target="_blank">Theme</a></li>
-          <li><a href="https://www.uwc.ac.za/about/international-relations" target="_blank">About Us</a></li>
-          <li><a href="https://www.uwc.ac.za/about/leadership/chancellor" target="_blank">Contact Us</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="https://www.uwc.ac.za/campus-life/student-life-and-culture" target="_blank">Apply</a></li>
-          <li><a href="https://www.uwc.ac.za/about/alumni" target="_blank">UWC</a></li>
-          <li><a href="https://www.uwc.ac.za/campus-life/resources/library" target="_blank">Stellies</a></li>
-          <li><a href="https://www.uwc.ac.za/news-and-announcements/news" target="_blank">Study</a></li>
-        </ul>
-        <div class="footer-stellies-logo">
-            <img src="stellies-logo.png" alt="university of Stellenbosch's logo" class="my-stellies-logo">
-            <h2><em>A sound education strengthens <br>the spirit.</em></h2>
-        </div>
-      </div>
+    <div class="carousel-slide">
+      <img src="images/uwc-grad-hall.png" alt="UWC campus">
     </div>
   </div>
 
-
-
-  <div class="footer-bottom">
-    <div class="footer-bottom-inner">
-    <span>© 2026 – UWC &amp; Stellenbosch</span>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Terms and Conditions</a>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Cookie Policy</a>
-    <span class="divider">|</span>
-    <a href="https://www.uwc.ac.za/privacy-policy">       Privacy Notice</a>
-    </div>
+  <div class="carousel-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+  </div>
 </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-actions">
+            <img src="images/uwc-logo.png" alt="uwc logo" class="logo footer-logo">
+            <h2 class="footer-quote">
+                From hope to action through <br>knowledge.
+            </h2>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+                <li><a href="theme.html">Theme</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="https://www.uwc.ac.za/campus-life/student-life-and-culture" target="_blank">Apply</a></li>
+                <li><a href="https://www.uwc.ac.za/about/alumni" target="_blank">UWC</a></li>
+                <li><a href="https://www.uwc.ac.za/campus-life/resources/library" target="_blank">Stellies</a></li>
+                <li><a href="https://www.uwc.ac.za/news-and-announcements/news" target="_blank">Study</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-actions">
+            <img src="images/stellies-logo.png"
+                 alt="university of Stellenbosch's logo"
+                 class="logo2 my-stellies-logo">
+            <h2 class="footer-quote">
+                <em>A sound education strengthens <br>the spirit.</em>
+            </h2>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+            <span>© 2026 – UWC &amp; Stellenbosch  <span class="divider">|</span></span>
+           
+            <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Terms and Conditions <span class="divider">|</span></a>
+            
+            <a href="https://www.uwc.ac.za/campus-life/student-development-support/policies">Cookie Policy <span class="divider">|</span></a>
+            
+            <a href="https://www.uwc.ac.za/privacy-policy">Privacy Notice</a>
+        </div>
+    </div>
 </footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger-icon');
+const mobileNav = document.querySelector('.mobile-nav-bar');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.toggle('active'); // toggle the 'active' class
+});
+</script>
 </body>
-</head>
+</html>
