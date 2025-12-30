@@ -390,7 +390,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1332px;
+  max-width: 75vw;
   margin: 0 auto 60px;
   padding: 0 90px;
   gap: 2.5rem;
